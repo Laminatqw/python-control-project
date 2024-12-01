@@ -2,6 +2,8 @@ from django.db import models
 
 from core.models import BaseModel
 
+from config import settings
+
 # from cars.services import upload_car_photo
 
 
@@ -10,25 +12,19 @@ from core.models import BaseModel
 class CarModel(BaseModel):
     class Meta:
         db_table = 'cars'
-    # seller_id = models.ForeignKey()
-    CURRENCY_CHOICES = [
-        ('UAH', 'Українська гривня'),
-        ('EUR', 'Євро'),
-        ('USD', 'Долар США'),
-    ]
 
-    STATUS_CHOICES = [
-        ('active', 'Активний'),
-        ('inactive', 'Неактивний'),
-        ('pending', 'На розгляді'),
-    ]
-    model = models.CharField(max_length=25)
-    brand = models.CharField(max_length=25)
-    price = models.IntegerField()
-    region = models.CharField(max_length=25)
-    currency = models.CharField(max_length=5, choices=CURRENCY_CHOICES, default='EUR')
-    status = models.CharField(max_length=25, choices=STATUS_CHOICES, default='active')
+    seller = models.ForeignKey(
+        settings.AUTH_USER_MODEL,  # Зв'язок із користувачем
+        on_delete=models.CASCADE,
+        related_name='cars'
+    )
+    brand = models.CharField(max_length=100)
+    model = models.CharField(max_length=100)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
 
+    def __str__(self):
+        return f"{self.brand} {self.model} (Seller: {self.seller.email})"
 
 
     # salon

@@ -4,43 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fec84489-91d8-4ab2-b855-bc83efd5ee8f" name="Changes" comment="begin of proj">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/apps/cars/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/apps/cars/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/apps/cars/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/apps/cars/serializer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/apps/cars/services.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/apps/cars/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/apps/cars/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/config/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/config/extra_conf/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/config/extra_conf/rest_conf.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/core/management/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/core/management/commands/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/core/management/commands/wait_db.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nginx.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/setup.cfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="fec84489-91d8-4ab2-b855-bc83efd5ee8f" name="Changes" comment="Before making authentification">
+      <change afterPath="$PROJECT_DIR$/backend/apps/auth/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/apps/cars/managers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/apps/cars/migrations/0002_alter_carmodel_currency_alter_carmodel_status.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/apps/cars/migrations/0003_remove_carmodel_currency_remove_carmodel_region_and_more.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/apps/listing/filters.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/apps/listing/serializer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/apps/listing/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/apps/users/manager.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/apps/users/serializer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/apps/users/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/config/extra_conf/jwt_conf.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/core/permissions/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/core/permissions/is_prem_user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/python-control-project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/python-control-project.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cars/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cars/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/cars/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cars/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cars/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cars/serializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cars/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/asgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/config/asgi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/config/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/config/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/config/wsgi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/manage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/apps/cars/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/cars/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/apps/cars/serializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/cars/serializer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/apps/cars/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/cars/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/config/extra_conf/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/config/extra_conf/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/config/extra_conf/rest_conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/config/extra_conf/rest_conf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/config/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/config/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/config/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poetry.lock" beforeDir="false" afterPath="$PROJECT_DIR$/poetry.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,13 +68,13 @@
     "RunOnceActivity.pycharm.django.structure.promotion.once.per.project": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/User/IdeaProjects/python-control-project/config/settings.py",
+    "last_opened_file_path": "C:/Users/User/IdeaProjects/python-control-project/backend/config/extra_conf",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.intellij.pycharm.community.ide.impl.configuration.PythonContentEntriesConfigurable",
+    "settings.editor.selected.configurable": "com.intellij.python.django.customization.DjangoModulesConfigurable",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -96,7 +86,11 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\IdeaProjects\python-control-project\backend\config\extra_conf" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\IdeaProjects\python-control-project\backend\apps" />
       <recent name="C:\Users\User\IdeaProjects\python-control-project\apps" />
       <recent name="C:\Users\User\IdeaProjects\python-control-project" />
     </key>
@@ -125,7 +119,7 @@
       <workItem from="1732865591046" duration="2597000" />
       <workItem from="1732886378117" duration="2949000" />
       <workItem from="1732910454846" duration="1002000" />
-      <workItem from="1732959412966" duration="6025000" />
+      <workItem from="1732959412966" duration="44841000" />
     </task>
     <task id="LOCAL-00001" summary="begin of proj">
       <option name="closed" value="true" />
@@ -135,7 +129,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732795519656</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Before making authentification">
+      <option name="closed" value="true" />
+      <created>1732967250625</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1732967250625</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,6 +159,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="begin of proj" />
-    <option name="LAST_COMMIT_MESSAGE" value="begin of proj" />
+    <MESSAGE value="Before making authentification" />
+    <option name="LAST_COMMIT_MESSAGE" value="Before making authentification" />
   </component>
 </project>
