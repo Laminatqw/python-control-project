@@ -1,7 +1,15 @@
+from datetime import timedelta, timezone
+
+from django.utils.timezone import now
+
 from rest_framework import serializers
 
 from apps.cars.serializer import CarSerializer
 from apps.listing.models import ListingModel, ListingViewModel
+
+
+def contains_profanity(text):
+    return any(word in text.lower() for word in BAD_WORDS)
 
 
 class ListingSerializer(serializers.ModelSerializer):
@@ -9,7 +17,21 @@ class ListingSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = ListingModel
-        fields = ['id', 'price', 'currency', 'region', 'status', 'car']
+        fields = ['id', 'description', 'price', 'currency', 'region', 'status', 'car']
+
+    def validate_description(self, value):
+        if contains_profanity(value):
+            raise serializers.ValidationError("Description contains prohibited words.")
+        return value
+    def validate(self, data):
+        if self.instance and self.instance.edit_attempts >= self.instance.max_edit_attempts:
+            raise serializers.ValidationError("You cannot edit this listing more than 3 times.")
+        return data
+
+    def update(self, instance, validated_data):
+        instance.edit_attempts += 1
+        return super().update(instance, validated_data)
+
 
     def create(self, validated_data):
         # Витягуємо дані машини
@@ -31,7 +53,27 @@ class ListingViewSerializer(serializers.ModelSerializer):
     fields = ('listing', 'viewed_at', 'region')
 
 class ListingStatsSerializer(serializers.Serializer):
-    views_today = serializers.IntegerField()  # Кількість переглядів за сьогодні
-    views_week = serializers.IntegerField()   # Кількість переглядів за останній тиждень
-    avg_price_region = serializers.DecimalField(max_digits=10, decimal_places=2)  # Середня ціна по регіону
-    avg_price_country = serializers.DecimalField(max_digits=10, decimal_places=2) # Середня ціна по всій країні
+    total_views = serializers.IntegerField()
+    daily_views = serializers.IntegerField()
+    weekly_views = serializers.IntegerField()
+
+    @staticmethod
+    def get_stats(listing):
+        today = now().date()
+        week_ago = today - timedelta(days=7)
+
+        total_views = listing.views.count()
+        daily_views = listing.views.filter(viewed_at__date=today).count()
+        weekly_views = listing.views.filter(viewed_at__date__gte=week_ago).count()
+
+        return {
+            'total_views': total_views,
+            'daily_views': daily_views,
+            'weekly_views': weekly_views,
+        }
+
+BAD_WORDS = ['badword1', 'badword2', 'badword3']
+
+
+
+

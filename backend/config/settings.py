@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     #my_apps
 
     'core',
+    'apps.currency',
     'apps.listing',
     'apps.auth',
     'apps.users',
