@@ -28,13 +28,13 @@ class CarBrandListView(ListAPIView):
         return Response({'brands': list(brands)})
 
 
-    class NotifyAdminView(APIView):
-        permission_classes = [IsAuthenticated]
-
-        def post(self, request):
-            brand = request.data.get('brand')
-            if not brand:
-                return Response({"detail": "Brand is required."}, status=400)
-
-            notify_admin_about_new_brand(request.user, brand)
-            return Response({"detail": "Request sent to admin."}, status=200)
+    # class NotifyAdminView(APIView):
+    #     permission_classes = [IsAuthenticated]
+    #
+    #     def post(self, request):
+    #         brand = request.data.get('brand')
+    #         if not brand:
+    #             return Response({"detail": "Brand is required."}, status=400)
+    #
+    #         notify_admin_about_new_brand(request.user, brand)
+    #         return Response({"detail": "Request sent to admin."}, status=200)

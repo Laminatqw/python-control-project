@@ -4,41 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fec84489-91d8-4ab2-b855-bc83efd5ee8f" name="Changes" comment="After making authentfication one to many in listing, cars, and users,">
-      <change afterPath="$PROJECT_DIR$/backend/apps/currency/utils/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/apps/currency/utils/util.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/core/etc/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/core/etc/currency_rate.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/core/etc/notify_admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/core/etc/record_view.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/CarContainer/Car.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/CarContainer/CarForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/CarContainer/Cars.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/CarContainer/OneCarPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/constants/urls.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/layouts/MainLayout.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/pages/CarPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/pages/LoginPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/router.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/services/apiServices.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/services/authServices.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/services/carServices.js" afterDir="false" />
+    <list default="true" id="fec84489-91d8-4ab2-b855-bc83efd5ee8f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ReadME.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/apps/cars/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/cars/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/apps/cars/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/cars/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/apps/listing/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/listing/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/apps/listing/serializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/listing/serializer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/apps/listing/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/listing/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/apps/listing/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/apps/listing/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/config/extra_conf/jwt_conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/config/extra_conf/jwt_conf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/config/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/nginx.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/poetry.lock" beforeDir="false" afterPath="$PROJECT_DIR$/poetry.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +31,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Laminatqw"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Laminatqw/python-control-project.git",
+    "accountId": "f8aaf4aa-6283-480a-afa0-b49f327d5c18"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -132,7 +115,7 @@
       <workItem from="1732865591046" duration="2597000" />
       <workItem from="1732886378117" duration="2949000" />
       <workItem from="1732910454846" duration="1002000" />
-      <workItem from="1732959412966" duration="67987000" />
+      <workItem from="1732959412966" duration="69195000" />
     </task>
     <task id="LOCAL-00001" summary="begin of proj">
       <option name="closed" value="true" />
@@ -158,7 +141,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733074612276</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="02.12 commit and push">
+      <option name="closed" value="true" />
+      <created>1733102578932</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1733102578932</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,6 +173,7 @@
     <MESSAGE value="begin of proj" />
     <MESSAGE value="Before making authentification" />
     <MESSAGE value="After making authentfication one to many in listing, cars, and users," />
-    <option name="LAST_COMMIT_MESSAGE" value="After making authentfication one to many in listing, cars, and users," />
+    <MESSAGE value="02.12 commit and push" />
+    <option name="LAST_COMMIT_MESSAGE" value="02.12 commit and push" />
   </component>
 </project>
