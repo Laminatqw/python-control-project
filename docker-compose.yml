@@ -3,7 +3,7 @@ services:
     build:
       context: .
     volumes:
-      - ./backend:/app
+      - ./backend
     env_file:
       - .env
     ports:
