@@ -28,3 +28,12 @@ COPY pyproject.toml poetry.lock /app/
 
 # Install dependencies
 RUN poetry config virtualenvs.create false && poetry install --no-ansi
+
+# ✅ Copy all project files
+COPY . /app/
+
+# ✅ Set the working directory to backend
+WORKDIR /app/backend
+
+# ✅ Default command
+CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
